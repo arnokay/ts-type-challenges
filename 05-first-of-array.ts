@@ -1,5 +1,5 @@
-type arr1 = ['a', 'b', 'c']
-type arr2 = [3, 2, 1]
+type arr1 = ["a", "b", "c"];
+type arr2 = [3, 2, 1];
 type arr3 = [];
 
 type First<T extends any[]> = T[0];

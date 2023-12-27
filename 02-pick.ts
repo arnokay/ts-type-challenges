@@ -5,12 +5,12 @@ interface Todo {
 }
 
 type MyPick<T, B extends keyof T> = {
-  [key in B]: T[key]
-}
+  [key in B]: T[key];
+};
 
-type TodoPreview = MyPick<Todo, 'title' | 'completed'>
+type TodoPreview = MyPick<Todo, "title" | "completed">;
 
 const todo: TodoPreview = {
-  title: 'Clean room',
+  title: "Clean room",
   completed: false,
-}
+};
